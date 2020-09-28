@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;TPL Geocoding Plugin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Geocoding</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetMinimumSize</enum>
+             </property>
+             <item row="18" column="2">
+              <widget class="QLineEdit" name="radius">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Circular distance from given point in which search will be perform.&lt;br/&gt;Example (KM): 1 &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;'point' is mandatory paramter with radius input.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Circular distance from given point in which search will be perform. Example (KM): 1 </string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QLineEdit" name="inputDirectory_label">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="19" column="2">
+              <widget class="QLineEdit" name="limit">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Specify total number of result(s) you want in response.&lt;br/&gt;Example; 10&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Specify total number of result(s) you want in response. Example; 10 </string>
+               </property>
+              </widget>
+             </item>
+             <item row="18" column="0">
+              <widget class="QLabel" name="label_radius">
+               <property name="text">
+                <string>Radius</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>API Key</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>91</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>91</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Source Directory</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="0">
+              <widget class="QLabel" name="label_address">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Address Column</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Table</string>
+               </property>
+              </widget>
+             </item>
+             <item row="21" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Output Type</string>
+               </property>
+              </widget>
+             </item>
+             <item row="22" column="0">
+              <widget class="QLabel" name="label_18">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Output Directory</string>
+               </property>
+              </widget>
+             </item>
+             <item row="16" column="0">
+              <widget class="QLabel" name="label_point">
+               <property name="text">
+                <string>Point</string>
+               </property>
+              </widget>
+             </item>
+             <item row="16" column="2">
+              <widget class="QLineEdit" name="point">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Coordinates of the point from where search will be perform.&lt;br/&gt;Example; 33.693819;73.064981&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Coordinates of the point from where search will be perform. Example; 33.693819;73.064981</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>API Options</string>
+               </property>
+              </widget>
+             </item>
+             <item row="22" column="3">
+              <widget class="QToolButton" name="outputDirectory">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+             <item row="15" column="0">
+              <widget class="QLabel" name="label_polygon">
+               <property name="text">
+                <string>Polygon BB</string>
+               </property>
+              </widget>
+             </item>
+             <item row="15" column="2">
+              <widget class="QLineEdit" name="polygon">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Boundary in which search will be perform.&lt;br/&gt;Example; 33.693403089365354;73.0510070369154&amp;lt;&amp;gt;33.69881242943727;73.046972994557&lt;br/&gt;&amp;lt;&amp;gt;33.70011561887758;73.04952645753917&lt;br/&gt;&amp;lt;&amp;gt;33.69483133105171;73.05353904222545&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Boundary in which search will be perform. Example; 33.693403089365354;73.0510070369154&lt;&gt;33.69881242943727;73.046972994557 &lt;&gt;33.70011561887758;73.04952645753917 &lt;&gt;33.69483133105171;73.05353904222545</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="14" column="2">
+              <widget class="QComboBox" name="searchtype">
+               <item>
+                <property name="text">
+                 <string>match</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>match_phrase</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="24" column="2">
+              <widget class="QPushButton" name="geocoding">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Start Geocoding</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QgsCheckableComboBox" name="apiOptions">
+               <item>
+                <property name="text">
+                 <string>City</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Category</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Subcategory</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Searchtype</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Polygon</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Radius</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Point</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Offset</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Limit</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="21" column="2">
+              <widget class="QComboBox" name="outputType">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Update source file</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>CSV</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Text</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>JSON</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="20" column="2">
+              <widget class="QgsCheckableComboBox" name="OutputColumns">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Lat, Long</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Geocoded Address</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Precision</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Subcategory</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Category</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Priority</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Remarks</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <widget class="QComboBox" name="tables"/>
+             </item>
+             <item row="11" column="2">
+              <widget class="QComboBox" name="city"/>
+             </item>
+             <item row="12" column="2">
+              <widget class="QComboBox" name="subcategory"/>
+             </item>
+             <item row="22" column="2">
+              <widget class="QLineEdit" name="outputBrowse">
+               <property name="placeholderText">
+                <string>Optional</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_where">
+               <property name="text">
+                <string>Where Clause</string>
+               </property>
+              </widget>
+             </item>
+             <item row="19" column="0">
+              <widget class="QLabel" name="label_limit">
+               <property name="text">
+                <string>Limit</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QToolButton" name="inputDirectory">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="3" column="0">
+                <widget class="QRadioButton" name="database">
+                 <property name="text">
+                  <string>Database</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QRadioButton" name="csv">
+                 <property name="text">
+                  <string>CSV</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>Data Source</string>
+               </property>
+              </widget>
+             </item>
+             <item row="20" column="0">
+              <widget class="QLabel" name="label_21">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>81</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Output Columns</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="label_city">
+               <property name="text">
+                <string>City Column</string>
+               </property>
+              </widget>
+             </item>
+             <item row="14" column="0">
+              <widget class="QLabel" name="label_searchtype">
+               <property name="text">
+                <string>SearchType</string>
+               </property>
+              </widget>
+             </item>
+             <item row="17" column="2">
+              <widget class="QLineEdit" name="offset">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Specify index of the results.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="25" column="2">
+              <widget class="QPushButton" name="stop">
+               <property name="text">
+                <string>Stop Geocoding</string>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="2">
+              <widget class="QComboBox" name="category"/>
+             </item>
+             <item row="10" column="2">
+              <widget class="QComboBox" name="address">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QPushButton" name="connect2db">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Connect to Database</string>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="0">
+              <widget class="QLabel" name="label_subcategory">
+               <property name="text">
+                <string>Subcategory</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="APIkey">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="13" column="0">
+              <widget class="QLabel" name="label_category">
+               <property name="text">
+                <string>Category</string>
+               </property>
+              </widget>
+             </item>
+             <item row="17" column="0">
+              <widget class="QLabel" name="label_offset">
+               <property name="text">
+                <string>Offset</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="2">
+              <widget class="QLineEdit" name="where">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>Optional where clause filter</string>
+               </property>
+              </widget>
+             </item>
+             <item row="23" column="2">
+              <widget class="QPushButton" name="preprocess">
+               <property name="text">
+                <string>Pre-Process Data</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Pre-Processing</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="6" column="0">
+          <widget class="QLabel" name="logs_25">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Pre-Process Data&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="specialchars">
+             <property name="text">
+              <string>Remove Special Characters</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="spaces">
+             <property name="text">
+              <string>Remove Extra Spaces</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="nullvals">
+             <property name="text">
+              <string>Exclude Null Values</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="numericalvals">
+             <property name="text">
+              <string>Remove Numerical Values</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="length">
+             <property name="text">
+              <string>Remove where Length Less Than 5</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>48</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="startprocessing">
+             <property name="text">
+              <string>Start Processing</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="logs_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="logs_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="logs_26">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="logs_24">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Preferred</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>582</width>
+             <height>188</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="logs_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Logging</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="6" column="0">
+            <widget class="QLabel" name="logs_6">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="logs_8">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="logs_9">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="logs_5">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QLabel" name="logs_11">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="logs_3">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="logs_4">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="logs_7">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="logs_10">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
+            <widget class="QLabel" name="logs_14">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0">
+            <widget class="QLabel" name="logs_12">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0">
+            <widget class="QLabel" name="logs_13">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="logs_1">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="logs_2">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="theme">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>81</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>81</width>
+       <height>22</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>Light</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dark</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsCheckableComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgscheckablecombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
